@@ -25,8 +25,4 @@ StrayaGaming-TDM<br/>
 -- description.ext<br/>
 -- functions.hpp<br/>
 -- init.sqf<br/>
--- missions.sqf<br/>
-`
-
-      
-      
+-- missions.sqf
