@@ -4,30 +4,29 @@ A Team Deathmatch Gamemode made by Slep.
 
 File Structure
 
-
-StrayaGaming-TDM
--- scripts
-   -- functions
-      -- admin
-         -- fn_admin_teleport.sqf
-         -- fn_admin_invisibility.sqf
-      -- communication
-         -- fn_fromServer.sqf
-      -- fn_allowedUser.sqf
-      -- fn_outsideZone.sqf
-      -- fn_readyUp.sqf
-      -- fn_roundEnd.sqf
-      -- fn_roundInit.sqf
-      -- fn_setUnitLoadout.sqf
-      -- fn_skipBriefing.sqf
-      -- fn_timer.sqf
-   -- hpp
-      -- mset.hpp
--- description.ext
--- functions.hpp
--- init.sqf
--- missions.sqf
-
+StrayaGaming-TDM<br/>
+-- scripts<br/>
+----- functions<br/>
+-------- admin<br/>
+----------- fn_admin_teleport.sqf<br/>
+----------- fn_admin_invisibility.sqf<br/>
+-------- communication<br/>
+----------- fn_fromServer.sqf<br/>
+-------- fn_allowedUser.sqf<br/>
+-------- fn_outsideZone.sqf<br/>
+-------- fn_readyUp.sqf<br/>
+-------- fn_roundEnd.sqf<br/>
+-------- fn_roundInit.sqf<br/>
+-------- fn_setUnitLoadout.sqf<br/>
+-------- fn_skipBriefing.sqf<br/>
+-------- fn_timer.sqf<br/>
+----- hpp<br/>
+-------- mset.hpp<br/>
+-- description.ext<br/>
+-- functions.hpp<br/>
+-- init.sqf<br/>
+-- missions.sqf<br/>
+`
 
       
       
