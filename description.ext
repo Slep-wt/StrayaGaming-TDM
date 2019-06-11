@@ -1,0 +1,20 @@
+#include "scripts\hpp\mset.hpp"
+#include "functions.hpp"
+
+author = "Slep.";
+onLoadMission = MNAME;
+onLoadIntro = MDESC;
+
+allowFunctionsRecompile = 0;
+
+briefing = 0;
+respawn = 3;
+respawnOnStart = -1;
+respawnDelay = 10;
+respawnDialog = 1;
+
+reviveMode = 1;
+reviveRequiredItems = 2;
+reviveRequiredItemsFakConsumed = 1;
+reviveDelay = 8;
+reviveForceRespawnDelay = 5;
