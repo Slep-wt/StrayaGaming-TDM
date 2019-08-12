@@ -9,7 +9,7 @@
 private ["_hidden"];
 
 if !(uid call ct_fnc_allowedUser) exitWith { 
-	[idPlayer, uid, playerName, 0] remoteExec ["ctserver_fn_kickUser",2];  
+	"prohibited" call BIS_fnc_endMission;
 }; 
 
 if !(isObjectHidden player) then {

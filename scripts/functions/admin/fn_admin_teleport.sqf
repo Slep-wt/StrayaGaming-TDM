@@ -1,22 +1,29 @@
 /*
 @
 @ Author: Slep.
-@ File: fn_outsideZone.sqf
+@ File: fn_admin_teleport.sqf
 @ Description: Admin teleport script, pretty self explanatory
 @
 */
 
-private ["_newPos", "_timer"];
+private ["_lpos"];
 
 if !(uid call ct_fnc_allowedUser) exitWith { 
-	[idPlayer, uid, playerName, 0] remoteExec ["ctserver_fn_kickUser",2];  
+	"prohibited" call BIS_fnc_endMission;
 }; 
 
+_pos = [0];
+_startpos = getPosATL player;
+hint "Click on the Map where you'd like to teleport.";
 openMap true;
-_timer = time + 1;
-while {time <= _timer} do {};
-hint "Click on map to teleport."
-onMapSingleClick "player setPos _pos; onMapSingleClick ' '; true;"
-openMap false;
-_newPos = getPosATL player;
-hint format["Teleported to %1 %2 %3",_newPos select 0, _newPos select 1, _newPos select 2]; 
+onMapSingleClick { 
+	player setPos _pos;
+	onMapSingleClick {};
+};
+sleep 1;
+_lpos = getPosATL player;
+while { _startpos select 0 == _lpos select 0 } do {
+	_lpos = getPosATL player;
+};
+openMap false; 
+hint format["Teleported to %1, %2", _lpos select 0, _lpos select 1];

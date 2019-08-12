@@ -6,12 +6,11 @@ class CfgFunctions {
 		class core {
 			file = "scripts\functions";
 			class allowedUser {};
-			class outsideZone {};
+			class keyHandler {};
 			class roundInit {};
 			class roundEnd {};
 			class readyUp {};
 			class setUnitLoadout {};
-			class timer {};
 			class skipBriefing {
 				preInit = 1;
 			};

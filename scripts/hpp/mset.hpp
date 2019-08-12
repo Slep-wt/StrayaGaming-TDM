@@ -1,19 +1,20 @@
 /* defines.hpp */
 
-#define MNAME "Operation Pyhrric Victory"
+#define MNAME "StrayaGaming Team Deathmatch"
+#define AMNAME "StrayaGaming TDM r1.1"
 #define MDESC "StrayaGaming 16 v 16 Team Deathmatch Malden"
 
 class CfgDebriefing 
 {
 	class eastWon 
 	{
-		title = "Wasteland has won!";
+		title = "Opfor has won!";
 		subtitle = "Thanks for playing!";
 		picture = "RedCrystal";
 	}
 	class westWon 
 	{
-		title = "Altis Life has won!";
+		title = "Blufor has won!";
 		subtitle = "Thanks for playing!";
 		picture = "RedCrystal";
 	};
